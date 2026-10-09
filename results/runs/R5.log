@@ -1,0 +1,24 @@
+[00:05:21] normalising train (cached)
+[00:05:35] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[00:05:35] pass A (train): blocking + features
+[00:05:36]   [train/india] cached
+[00:05:36]   [train/us] cached
+[00:06:45]   keep_per_source=1: recall=0.4402 avg_cands=2.00
+[00:06:45]   keep_per_source=2: recall=0.7069 avg_cands=3.99
+[00:06:45]   keep_per_source=3: recall=0.8380 avg_cands=5.96
+[00:06:45]   keep_per_source=4: recall=0.8920 avg_cands=7.90
+[00:06:45]   keep_per_source=5: recall=0.9125 avg_cands=9.79
+[00:06:45]   keep_per_source=6: recall=0.9218 avg_cands=11.62
+[00:06:45]   keep_per_source=7: recall=0.9278 avg_cands=13.39
+[00:06:45]   keep_per_source=8: recall=0.9326 avg_cands=15.10
+[00:06:46]   keep_per_source=9: recall=0.9366 avg_cands=16.73
+[00:06:46]   keep_per_source=10: recall=0.9399 avg_cands=18.28
+[00:06:48] blocking: {'pairs': 40340935, 'avg_candidates_per_s1': 18.28, 'pair_recall': 0.9399, 'reduction_ratio': 0.99999823}
+[00:06:48] stage-1 filter
+[00:14:22] after stage-1: {'threshold': 0.028862088774624903, 'avg_candidates_per_s1': 4.79, 'pair_recall': 0.9352, 'blocking_ceiling_f05_all_s1': 0.9774}
+[00:14:22] pass B (train): filter + context features
+[00:15:13] 5-fold OOF training on 3179637 pairs of 661897 S1, positives=2145669
+[00:26:28]   best iters: [1842, 1657, 1591, 1660, 1380]
+[00:26:39] validation: {'oof_macro_f05': 0.9594, 'threshold': 0.7, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9774, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[00:26:39] per-country OOF F0.5: {'india': 0.9455, 'us': 0.9687}
+[00:26:42] done -> output

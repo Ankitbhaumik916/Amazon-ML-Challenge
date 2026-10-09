@@ -1,0 +1,65 @@
+[19:15:24] normalising train (cached)
+[19:15:44] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[19:15:44] pass A (train): blocking + features
+[19:15:46]   [train/india] cached
+[19:15:46]   [train/us] cached
+[19:17:23]   keep_per_source=1 (+addr 5): recall=0.8673 avg_cands=9.78
+[19:17:23]   keep_per_source=2 (+addr 5): recall=0.9011 avg_cands=10.64
+[19:17:24]   keep_per_source=3 (+addr 5): recall=0.9263 avg_cands=12.00
+[19:17:24]   keep_per_source=4 (+addr 5): recall=0.9405 avg_cands=13.60
+[19:17:24]   keep_per_source=5 (+addr 5): recall=0.9474 avg_cands=15.25
+[19:17:24]   keep_per_source=6 (+addr 5): recall=0.9511 avg_cands=16.86
+[19:17:25]   keep_per_source=7 (+addr 5): recall=0.9534 avg_cands=18.42
+[19:17:25]   keep_per_source=8 (+addr 5): recall=0.9551 avg_cands=19.92
+[19:17:25]   keep_per_source=9 (+addr 5): recall=0.9564 avg_cands=21.35
+[19:17:25]   keep_per_source=10 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=11 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=12 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=13 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=14 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=15 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:26]   keep_per_source=16 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=17 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=18 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=19 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=20 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=21 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:27]   keep_per_source=22 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=23 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=24 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=25 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=26 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=27 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:28]   keep_per_source=28 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:29]   keep_per_source=29 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:29]   keep_per_source=30 (+addr 5): recall=0.9574 avg_cands=22.72
+[19:17:29] blocking: {'pairs': 43951071, 'avg_candidates_per_s1': 19.92, 'pair_recall': 0.9551, 'reduction_ratio': 0.99999807}
+[19:17:29] stage-1 filter
+[19:25:55] pass B (train): filter + context features
+[19:28:47] after stage-1: {'threshold': 0.20524928203631485, 'avg_candidates_per_s1': 4.13, 'pair_recall': 0.9362, 'blocking_ceiling_f05_all_s1': 0.9782}
+[19:28:49] 5-fold OOF training on 2736628 pairs of 661897 S1, positives=2147753
+[19:41:02]   best iters: [1628, 1676, 1511, 1253, 1540]
+[19:41:15] validation: {'oof_macro_f05': 0.9672, 'threshold': 0.7499999999999998, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9782, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[19:41:15] per-country OOF F0.5: {'india': 0.9554, 'us': 0.9751}
+[19:41:18] normalising test (cached)
+[19:41:19] pass A (test): blocking + features
+[19:41:23]   [test/france] S1=259452 S2=703378 S3=731615
+[19:41:35]     retrieved S2: 7717621 pairs
+[19:41:38]     retrieved S3: 7721886 pairs
+[19:43:12]     exact cosines done
+[19:44:25]     S2: 3090294 pairs (11.91/S1)
+[19:45:09]     S3: 3091865 pairs (11.92/S1)
+[19:45:12]   [test/india] S1=809986 S2=2312565 S3=2405000
+[19:46:09]     retrieved S2: 24295681 pairs
+[19:46:38]     retrieved S3: 24295641 pairs
+[19:53:22]     exact cosines done
+[19:57:32]     S2: 8689934 pairs (10.73/S1)
+[20:00:16]     S3: 9386790 pairs (11.59/S1)
+[20:00:21]   [test/us] S1=663106 S2=1871330 S3=1945701
+[20:00:56]     retrieved S2: 19888883 pairs
+[20:01:13]     retrieved S3: 19888639 pairs
+[20:05:59]     exact cosines done
+[20:09:01]     S2: 7153020 pairs (10.79/S1)
+[20:10:59]     S3: 7365416 pairs (11.11/S1)
+[20:15:43] test: {'s1': 1732544, 'avg_blocked_per_s1': 19.6, 'avg_candidates_per_s1': 4.89, 'predicted_singletons': 0.063, 'avg_matches_per_s1': 3.166, 'countries': {'india': 809986, 'us': 663106, 'france': 259452}, 'predicted_singletons_per_country': {'france': 0.0684, 'india': 0.0649, 'us': 0.0587}}
+[20:15:43] done -> output

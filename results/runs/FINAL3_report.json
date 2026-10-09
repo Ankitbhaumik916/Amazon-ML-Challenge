@@ -1,0 +1,93 @@
+{
+  "args": {
+    "data_dir": "dataset",
+    "out_dir": "output",
+    "artifacts_dir": "artifacts",
+    "k_key": 30,
+    "key_max_df": 0.0005,
+    "prune_score": "cheap",
+    "key_feature": true,
+    "num_variants": false,
+    "feature_set": "v3",
+    "lr": 0.1,
+    "num_leaves": 127,
+    "max_rounds": 3000,
+    "keep_per_source": 10,
+    "store_per_source": 10,
+    "min_score": 0.25,
+    "keep_addr": 5,
+    "store_addr": 5,
+    "cross_country": false,
+    "folds": 5,
+    "stage1_recall": 0.985,
+    "train_frac": 0.3,
+    "rebuild": false,
+    "workers": 18,
+    "skip_test": false,
+    "resolve_conflicts": true
+  },
+  "blocking_train": {
+    "pairs": 50141148,
+    "avg_candidates_per_s1": 22.72,
+    "pair_recall": 0.9574,
+    "reduction_ratio": 0.9999978
+  },
+  "stage1": {
+    "threshold": 0.154029788469948,
+    "avg_candidates_per_s1": 4.27,
+    "pair_recall": 0.9432,
+    "blocking_ceiling_f05_all_s1": 0.9805
+  },
+  "validation": {
+    "oof_macro_f05": 0.969,
+    "threshold": 0.7249999999999999,
+    "alpha": 0.0,
+    "blocking_ceiling_f05": 0.9805,
+    "all_empty_baseline": 0.0557,
+    "n_s1_evaluated": 661897,
+    "per_country": {
+      "india": 0.9576,
+      "us": 0.9767
+    }
+  },
+  "top_features": {
+    "p1": 2680677.1,
+    "a_num_jacc": 1642553.6,
+    "a_num_conflict": 1385822.9,
+    "a_num_drop": 645824.5,
+    "a_num_logdiff": 535918.9,
+    "legal_conflict": 448903.3,
+    "legal_extra_r": 375695.4,
+    "a_len_min": 367511.3,
+    "n_idf_mean_r": 296305.0,
+    "a_postal": 286079.9,
+    "n_len_diff": 260838.1,
+    "n_skel_ratio": 258718.7,
+    "n_s1_for_cand": 258218.8,
+    "a_num_core_eq": 255007.3,
+    "n_full_tset": 163295.5
+  },
+  "test_conflicts": {
+    "conflict_records": 1319,
+    "pairs_in_conflict": 2794,
+    "dropped": 1475,
+    "ties": 33
+  },
+  "test": {
+    "s1": 1732544,
+    "avg_blocked_per_s1": 22.38,
+    "avg_candidates_per_s1": 5.09,
+    "predicted_singletons": 0.0623,
+    "avg_matches_per_s1": 3.193,
+    "countries": {
+      "india": 809986,
+      "us": 663106,
+      "france": 259452
+    },
+    "predicted_singletons_per_country": {
+      "france": 0.0675,
+      "india": 0.064,
+      "us": 0.0582
+    }
+  }
+}

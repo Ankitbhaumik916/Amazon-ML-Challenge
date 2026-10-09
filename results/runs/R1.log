@@ -1,0 +1,34 @@
+[21:23:56] normalising train (cached)
+[21:27:12] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[21:27:12] pass A (train): blocking + features
+[21:27:18]   [train/india] S1=883188 S2=2017799 S3=2115547
+[21:28:15]     retrieved S2: 26490477 pairs
+[21:28:43]     retrieved S3: 26490485 pairs
+[21:34:44]     exact cosines done
+[21:36:39]     S2: 7888254 pairs (8.93/S1)
+[21:37:35]     S3: 8251628 pairs (9.34/S1)
+[21:37:40]   [train/us] S1=1323633 S2=3016817 S3=3170056
+[21:39:04]     retrieved S2: 39705240 pairs
+[21:39:52]     retrieved S3: 39705601 pairs
+[21:47:58]     exact cosines done
+[21:50:53]     S2: 11945925 pairs (9.03/S1)
+[21:52:14]     S3: 12255128 pairs (9.26/S1)
+[21:53:19]   keep_per_source=1: recall=0.4402 avg_cands=2.00
+[21:53:19]   keep_per_source=2: recall=0.7069 avg_cands=3.99
+[21:53:19]   keep_per_source=3: recall=0.8380 avg_cands=5.96
+[21:53:19]   keep_per_source=4: recall=0.8920 avg_cands=7.90
+[21:53:19]   keep_per_source=5: recall=0.9125 avg_cands=9.79
+[21:53:19]   keep_per_source=6: recall=0.9218 avg_cands=11.62
+[21:53:19]   keep_per_source=7: recall=0.9278 avg_cands=13.39
+[21:53:20]   keep_per_source=8: recall=0.9326 avg_cands=15.10
+[21:53:20]   keep_per_source=9: recall=0.9366 avg_cands=16.73
+[21:53:20]   keep_per_source=10: recall=0.9399 avg_cands=18.28
+[21:53:21] blocking: {'pairs': 25646794, 'avg_candidates_per_s1': 11.62, 'pair_recall': 0.9218, 'reduction_ratio': 0.99999887}
+[21:53:21] stage-1 filter
+[21:58:41] after stage-1: {'threshold': 0.04818808047569107, 'avg_candidates_per_s1': 4.38, 'pair_recall': 0.9172, 'blocking_ceiling_f05_all_s1': 0.9709}
+[21:58:41] pass B (train): filter + context features
+[21:59:24] 5-fold OOF training on 2900460 pairs of 661897 S1, positives=2103959
+[22:13:50]   best iters: [3000, 3000, 3000, 3000, 3000]
+[22:14:00] validation: {'oof_macro_f05': 0.944, 'threshold': 0.6749999999999998, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9707, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[22:14:00] per-country OOF F0.5: {'india': 0.9276, 'us': 0.955}
+[22:14:02] done -> output

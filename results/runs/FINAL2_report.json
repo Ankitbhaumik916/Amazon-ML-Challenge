@@ -1,0 +1,86 @@
+{
+  "args": {
+    "data_dir": "dataset",
+    "out_dir": "output",
+    "artifacts_dir": "artifacts",
+    "k_key": 30,
+    "key_max_df": 0.0005,
+    "prune_score": "cheap",
+    "key_feature": true,
+    "num_variants": false,
+    "feature_set": "v3",
+    "lr": 0.1,
+    "num_leaves": 127,
+    "max_rounds": 3000,
+    "keep_per_source": 8,
+    "store_per_source": 10,
+    "min_score": 0.25,
+    "keep_addr": 5,
+    "store_addr": 5,
+    "cross_country": false,
+    "folds": 5,
+    "stage1_recall": 0.98,
+    "train_frac": 0.3,
+    "rebuild": false,
+    "workers": 18,
+    "skip_test": false
+  },
+  "blocking_train": {
+    "pairs": 43951071,
+    "avg_candidates_per_s1": 19.92,
+    "pair_recall": 0.9551,
+    "reduction_ratio": 0.99999807
+  },
+  "stage1": {
+    "threshold": 0.20524928203631485,
+    "avg_candidates_per_s1": 4.13,
+    "pair_recall": 0.9362,
+    "blocking_ceiling_f05_all_s1": 0.9782
+  },
+  "validation": {
+    "oof_macro_f05": 0.9672,
+    "threshold": 0.7499999999999998,
+    "alpha": 0.0,
+    "blocking_ceiling_f05": 0.9782,
+    "all_empty_baseline": 0.0557,
+    "n_s1_evaluated": 661897,
+    "per_country": {
+      "india": 0.9554,
+      "us": 0.9751
+    }
+  },
+  "top_features": {
+    "a_num_jacc": 1975674.2,
+    "p1": 1842228.2,
+    "a_num_conflict": 1236421.8,
+    "a_num_drop": 672713.4,
+    "a_num_logdiff": 554815.0,
+    "a_len_min": 384360.7,
+    "legal_extra_r": 347656.7,
+    "legal_conflict": 341812.8,
+    "n_idf_mean_r": 290727.8,
+    "a_postal": 270736.2,
+    "n_skel_ratio": 269288.9,
+    "a_num_core_eq": 256390.5,
+    "n_len_diff": 241725.3,
+    "n_s1_for_cand": 223609.3,
+    "n_idf_min": 156522.7
+  },
+  "test": {
+    "s1": 1732544,
+    "avg_blocked_per_s1": 19.6,
+    "avg_candidates_per_s1": 4.89,
+    "predicted_singletons": 0.063,
+    "avg_matches_per_s1": 3.166,
+    "countries": {
+      "india": 809986,
+      "us": 663106,
+      "france": 259452
+    },
+    "predicted_singletons_per_country": {
+      "france": 0.0684,
+      "india": 0.0649,
+      "us": 0.0587
+    }
+  }
+}

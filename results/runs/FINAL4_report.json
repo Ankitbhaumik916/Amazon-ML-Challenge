@@ -1,0 +1,99 @@
+{
+  "args": {
+    "data_dir": "dataset",
+    "out_dir": "output",
+    "artifacts_dir": "artifacts",
+    "k_key": 30,
+    "key_max_df": 0.0005,
+    "prune_score": "cheap",
+    "key_feature": true,
+    "num_variants": false,
+    "feature_set": "v3",
+    "lr": 0.1,
+    "num_leaves": 127,
+    "max_rounds": 3000,
+    "keep_per_source": 10,
+    "store_per_source": 10,
+    "min_score": 0.25,
+    "keep_addr": 5,
+    "store_addr": 5,
+    "cross_country": false,
+    "folds": 5,
+    "stage1_recall": 0.985,
+    "stage1_frac": 0.3,
+    "emb_feature": false,
+    "learner": "xgb",
+    "train_frac": 1.0,
+    "rebuild": false,
+    "workers": 18,
+    "skip_test": false,
+    "resolve_conflicts": true
+  },
+  "blocking_train": {
+    "pairs": 50141148,
+    "avg_candidates_per_s1": 22.72,
+    "pair_recall": 0.9574,
+    "reduction_ratio": 0.9999978
+  },
+  "stage1": {
+    "threshold": 0.154029788469948,
+    "avg_candidates_per_s1": 4.27,
+    "pair_recall": 0.9432,
+    "blocking_ceiling_f05_all_s1": 0.9805
+  },
+  "validation": {
+    "oof_macro_f05": 0.9704,
+    "threshold": 0.7249999999999999,
+    "alpha": 0.0,
+    "blocking_ceiling_f05": 0.9805,
+    "all_empty_baseline": 0.0558,
+    "n_s1_evaluated": 2206821,
+    "oof_macro_f05_subset30": 0.97034,
+    "oof_macro_f05_resolved": 0.97039,
+    "oof_macro_f05_resolved_subset30": 0.97037,
+    "per_country": {
+      "india": 0.9593,
+      "us": 0.9777
+    }
+  },
+  "top_features": {
+    "legal_conflict": 3146.5,
+    "a_num_conflict": 2235.6,
+    "a_num_drop": 1651.9,
+    "a_num_core_eq": 1465.9,
+    "a_num_jacc": 896.6,
+    "legal_extra_r": 635.0,
+    "p1": 515.5,
+    "a_postal": 489.4,
+    "n_s1_for_cand": 203.8,
+    "n_first_eq": 193.6,
+    "n_skel_ratio": 181.5,
+    "a_num_logdiff": 181.3,
+    "n_jacc": 179.5,
+    "n_skel_jacc": 151.4,
+    "legal_eq": 143.9
+  },
+  "test_conflicts": {
+    "conflict_records": 629,
+    "pairs_in_conflict": 1305,
+    "dropped": 676,
+    "ties": 29
+  },
+  "test": {
+    "s1": 1732544,
+    "avg_blocked_per_s1": 22.38,
+    "avg_candidates_per_s1": 5.09,
+    "predicted_singletons": 0.0627,
+    "avg_matches_per_s1": 3.188,
+    "countries": {
+      "india": 809986,
+      "us": 663106,
+      "france": 259452
+    },
+    "predicted_singletons_per_country": {
+      "france": 0.0696,
+      "india": 0.0642,
+      "us": 0.0583
+    }
+  }
+}

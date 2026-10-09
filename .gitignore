@@ -1,0 +1,12 @@
+# competition data and generated files are not part of the repository
+dataset/
+output/
+output_*/
+artifacts/
+backup_*/
+*.zip
+*.parquet
+*.f32
+.venv/
+__pycache__/
+*.pyc

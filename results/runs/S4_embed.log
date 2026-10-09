@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 57/199 [00:00<00:00, 569.99it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1004.50it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+[train] pairs needing the embedding: 2287959, records: 1347257
+[train] embedded 664064 unique names in 672s
+[train] done in 759s
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+  m = d.entity_id.map(script).fillna(False).values.astype(bool)
+[test] pairs needing the embedding: 2116676, records: 1341840
+[test] embedded 684591 unique names in 325s
+[test] done in 404s

@@ -1,0 +1,51 @@
+[20:12:18] normalising train (cached)
+[20:15:22] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[20:15:22] pass A (train): blocking + features
+[20:15:26]   [train/india] S1=883188 S2=2017799 S3=2115547
+[20:16:14]     retrieved S2: 26490746 pairs
+[20:16:38]     retrieved S3: 26490751 pairs
+[20:21:49]     exact cosines done
+[20:23:16]     S2: 5085847 pairs (5.76/S1)
+[20:23:55]     S3: 5180198 pairs (5.87/S1)
+[20:23:59]   [train/us] S1=1323633 S2=3016817 S3=3170056
+[20:25:17]     retrieved S2: 39705672 pairs
+[20:26:06]     retrieved S3: 39705929 pairs
+[20:33:53]     exact cosines done
+[20:36:02]     S2: 7649946 pairs (5.78/S1)
+[20:36:59]     S3: 7717194 pairs (5.83/S1)
+[20:37:31] blocking: {'pairs': 25633185, 'avg_candidates_per_s1': 11.62, 'pair_recall': 0.915, 'reduction_ratio': None}
+[20:37:31]   keep_per_source=1: recall=0.4345 avg_cands=2.00
+[20:37:31]   keep_per_source=2: recall=0.6976 avg_cands=3.99
+[20:37:31]   keep_per_source=3: recall=0.8282 avg_cands=5.96
+[20:37:31]   keep_per_source=4: recall=0.8831 avg_cands=7.89
+[20:37:31]   keep_per_source=5: recall=0.9048 avg_cands=9.78
+[20:37:31]   keep_per_source=6: recall=0.9150 avg_cands=11.62
+[20:37:31] stage-1 filter
+[20:42:32] after stage-1: {'threshold': 0.048349553904779796, 'avg_candidates_per_s1': 4.34, 'pair_recall': 0.9105}
+[20:42:33] pass B (train): filter + context features
+[20:43:14] 5-fold OOF training on 2878864 pairs of 661897 S1, positives=2088554
+[20:58:55]   best iters: [3000, 3000, 3000, 3000, 2999]
+[20:59:05] validation: {'oof_macro_f05': 0.9383, 'threshold': 0.6749999999999998, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9679, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[20:59:05] per-country OOF F0.5: {'india': 0.918, 'us': 0.9519}
+[20:59:07] normalising test (cached)
+[21:02:00] pass A (test): blocking + features
+[21:02:03]   [test/france] S1=259452 S2=703378 S3=731615
+[21:02:14]     retrieved S2: 7721594 pairs
+[21:02:17]     retrieved S3: 7725849 pairs
+[21:03:27]     exact cosines done
+[21:03:52]     S2: 1548890 pairs (5.97/S1)
+[21:04:01]     S3: 1549032 pairs (5.97/S1)
+[21:04:04]   [test/india] S1=809986 S2=2312565 S3=2405000
+[21:05:01]     retrieved S2: 24295802 pairs
+[21:05:29]     retrieved S3: 24295805 pairs
+[21:11:18]     exact cosines done
+[21:12:32]     S2: 4691447 pairs (5.79/S1)
+[21:13:06]     S3: 4764972 pairs (5.88/S1)
+[21:13:09]   [test/us] S1=663106 S2=1871330 S3=1945701
+[21:13:40]     retrieved S2: 19889229 pairs
+[21:13:56]     retrieved S3: 19888944 pairs
+[21:17:16]     exact cosines done
+[21:18:07]     S2: 3805043 pairs (5.74/S1)
+[21:18:32]     S3: 3843916 pairs (5.80/S1)
+[21:23:10] test: {'s1': 1732544, 'avg_blocked_per_s1': 11.66, 'avg_candidates_per_s1': 5.19, 'predicted_singletons': 0.0648, 'avg_matches_per_s1': 3.075, 'countries': {'india': 809986, 'us': 663106, 'france': 259452}, 'predicted_singletons_per_country': {'france': 0.0684, 'india': 0.0693, 'us': 0.058}}
+[21:23:10] done -> output

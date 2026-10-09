@@ -1,0 +1,51 @@
+[13:16:30] normalising train (cached)
+[13:17:24] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[13:17:24] pass A (train): blocking + features
+[13:17:25]   [train/india] cached
+[13:17:25]   [train/us] cached
+[13:18:58]   keep_per_source=1 (+addr 5): recall=0.8673 avg_cands=9.78
+[13:18:59]   keep_per_source=2 (+addr 5): recall=0.9011 avg_cands=10.64
+[13:18:59]   keep_per_source=3 (+addr 5): recall=0.9263 avg_cands=12.00
+[13:18:59]   keep_per_source=4 (+addr 5): recall=0.9405 avg_cands=13.60
+[13:18:59]   keep_per_source=5 (+addr 5): recall=0.9474 avg_cands=15.25
+[13:19:00]   keep_per_source=6 (+addr 5): recall=0.9511 avg_cands=16.86
+[13:19:00]   keep_per_source=7 (+addr 5): recall=0.9534 avg_cands=18.42
+[13:19:00]   keep_per_source=8 (+addr 5): recall=0.9551 avg_cands=19.92
+[13:19:00]   keep_per_source=9 (+addr 5): recall=0.9564 avg_cands=21.35
+[13:19:00]   keep_per_source=10 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=11 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=12 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=13 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=14 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=15 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:01]   keep_per_source=16 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=17 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=18 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=19 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=20 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=21 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=22 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:02]   keep_per_source=23 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=24 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=25 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=26 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=27 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=28 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=29 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03]   keep_per_source=30 (+addr 5): recall=0.9574 avg_cands=22.72
+[13:19:03] blocking: {'pairs': 50141148, 'avg_candidates_per_s1': 22.72, 'pair_recall': 0.9574, 'reduction_ratio': 0.9999978}
+[13:19:03] stage-1 filter
+[13:27:58] pass B (train): filter + context features
+[13:31:13] after stage-1: {'threshold': 0.154029788469948, 'avg_candidates_per_s1': 4.27, 'pair_recall': 0.9432, 'blocking_ceiling_f05_all_s1': 0.9805}
+[13:31:14] 5-fold OOF training on 2828692 pairs of 661897 S1, positives=2164106
+[13:50:51]   best iters: [1581, 1541, 1359, 1444, 1726]
+[13:51:04] validation: {'oof_macro_f05': 0.969, 'threshold': 0.7249999999999999, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9805, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[13:51:04] per-country OOF F0.5: {'india': 0.9576, 'us': 0.9767}
+[13:51:07] normalising test (cached)
+[13:51:08] pass A (test): blocking + features
+[13:51:09]   [test/france] cached
+[13:51:09]   [test/india] cached
+[13:51:09]   [test/us] cached
+[13:56:12] conflict resolution: {'conflict_records': 1319, 'pairs_in_conflict': 2794, 'dropped': 1475, 'ties': 33}
+[13:56:29] test: {'s1': 1732544, 'avg_blocked_per_s1': 22.38, 'avg_candidates_per_s1': 5.09, 'predicted_singletons': 0.0623, 'avg_matches_per_s1': 3.193, 'countries': {'india': 809986, 'us': 663106, 'france': 259452}, 'predicted_singletons_per_country': {'france': 0.0675, 'india': 0.064, 'us': 0.0582}}
+[13:56:29] done -> output

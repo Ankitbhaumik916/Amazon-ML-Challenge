@@ -1,0 +1,30 @@
+[22:14:20] normalising train (cached)
+[22:14:34] train S1=2206821 true pairs=7638365 singleton share=0.0558 avg matches/S1=3.461
+[22:14:34] pass A (train): blocking + features
+[22:14:38]   [train/india] S1=883188 S2=2017799 S3=2115547
+[22:14:38]     blocking cached
+[22:15:57]     S2: 7888254 pairs (8.93/S1)
+[22:17:06]     S3: 8251628 pairs (9.34/S1)
+[22:17:10]   [train/us] S1=1323633 S2=3016817 S3=3170056
+[22:17:11]     blocking cached
+[22:19:08]     S2: 11945925 pairs (9.03/S1)
+[22:20:52]     S3: 12255128 pairs (9.26/S1)
+[22:21:49]   keep_per_source=1: recall=0.4402 avg_cands=2.00
+[22:21:49]   keep_per_source=2: recall=0.7069 avg_cands=3.99
+[22:21:49]   keep_per_source=3: recall=0.8380 avg_cands=5.96
+[22:21:49]   keep_per_source=4: recall=0.8920 avg_cands=7.90
+[22:21:49]   keep_per_source=5: recall=0.9125 avg_cands=9.79
+[22:21:50]   keep_per_source=6: recall=0.9218 avg_cands=11.62
+[22:21:50]   keep_per_source=7: recall=0.9278 avg_cands=13.39
+[22:21:50]   keep_per_source=8: recall=0.9326 avg_cands=15.10
+[22:21:50]   keep_per_source=9: recall=0.9366 avg_cands=16.73
+[22:21:50]   keep_per_source=10: recall=0.9399 avg_cands=18.28
+[22:21:51] blocking: {'pairs': 25646794, 'avg_candidates_per_s1': 11.62, 'pair_recall': 0.9218, 'reduction_ratio': 0.99999887}
+[22:21:51] stage-1 filter
+[22:26:22] after stage-1: {'threshold': 0.04818808047569107, 'avg_candidates_per_s1': 4.38, 'pair_recall': 0.9172, 'blocking_ceiling_f05_all_s1': 0.9709}
+[22:26:23] pass B (train): filter + context features
+[22:27:02] 5-fold OOF training on 2900460 pairs of 661897 S1, positives=2103959
+[22:42:00]   best iters: [3000, 3000, 3000, 2999, 3000]
+[22:42:09] validation: {'oof_macro_f05': 0.9542, 'threshold': 0.7, 'alpha': 0.0, 'blocking_ceiling_f05': 0.9707, 'all_empty_baseline': 0.0557, 'n_s1_evaluated': 661897}
+[22:42:10] per-country OOF F0.5: {'india': 0.9363, 'us': 0.9662}
+[22:42:12] done -> output

@@ -1,0 +1,67 @@
+{
+  "args": {
+    "data_dir": "dataset",
+    "out_dir": "output",
+    "artifacts_dir": "artifacts",
+    "k_key": 30,
+    "key_max_df": 0.0005,
+    "prune_score": "cheap",
+    "key_feature": true,
+    "num_variants": false,
+    "feature_set": "v2",
+    "lr": 0.1,
+    "num_leaves": 127,
+    "max_rounds": 3000,
+    "keep_per_source": 10,
+    "store_per_source": 10,
+    "min_score": 0.25,
+    "cross_country": false,
+    "folds": 5,
+    "stage1_recall": 0.985,
+    "train_frac": 0.3,
+    "rebuild": false,
+    "workers": 18,
+    "skip_test": true
+  },
+  "blocking_train": {
+    "pairs": 40340935,
+    "avg_candidates_per_s1": 18.28,
+    "pair_recall": 0.9399,
+    "reduction_ratio": 0.99999823
+  },
+  "stage1": {
+    "threshold": 0.15670338934177494,
+    "avg_candidates_per_s1": 4.18,
+    "pair_recall": 0.926,
+    "blocking_ceiling_f05_all_s1": 0.9744
+  },
+  "validation": {
+    "oof_macro_f05": 0.9584,
+    "threshold": 0.7,
+    "alpha": 0.0,
+    "blocking_ceiling_f05": 0.9743,
+    "all_empty_baseline": 0.0557,
+    "n_s1_evaluated": 661897,
+    "per_country": {
+      "india": 0.9437,
+      "us": 0.9682
+    }
+  },
+  "top_features": {
+    "a_num_jacc": 2303256.1,
+    "a_num_conflict": 1971749.4,
+    "p1": 1539514.6,
+    "a_num_logdiff": 824469.7,
+    "a_num_drop": 584496.8,
+    "a_len_min": 384353.7,
+    "n_full_tset": 359891.5,
+    "a_num_core_eq": 336459.5,
+    "n_idf_mean_r": 315003.2,
+    "n_s1_for_cand": 292181.2,
+    "a_postal": 285613.1,
+    "n_skel_ratio": 247664.8,
+    "a_tset": 188455.3,
+    "n_idf_jacc": 187170.4,
+    "n_jacc": 173378.5
+  }
+}
